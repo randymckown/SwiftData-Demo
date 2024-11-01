@@ -5,6 +5,7 @@
 //  Created by Randy McKown on 10/31/24.
 //
 
+import SwiftData
 import SwiftUI
 
 @main
@@ -13,5 +14,6 @@ struct iTour_SwiftData_DemoApp: App {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: Destination.self)
     }
 }
